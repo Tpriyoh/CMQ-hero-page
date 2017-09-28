@@ -1,0 +1,238 @@
+/*!
+ * Start Bootstrap - Business Casual (http://startbootstrap.com/template-overviews/business-casual)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-business-casual/blob/master/LICENSE)
+ */
+
+body {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	background: url("11.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+.background2 {
+	background-image: url("sandshell.jpg");
+	color: black;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+.blank{
+	text-align:center;
+	padding: 3%;
+	max-width: 100%;
+	width: 100%;
+	font-size: 40px;
+	color: white;
+	
+}
+.button1{
+	font-size: 15px;
+	background-color: red;
+	color: white;
+	padding-top: 4px;
+	display: inline-grid;
+	position: relative;
+}
+.button2 {
+	text-align: center;
+	padding-bottom: 5%;
+	padding-top: 5%;
+}
+.button3 {
+text-align: center;
+padding: 5%;
+}
+.logo {
+	text-align: center;
+	background-color: white;
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+.text {
+	font-size: 110%;
+	color: white;
+	border: 10%;
+	text-align: center;
+	width: 100%;
+	padding-left: 25%;
+	padding-right: 25%;
+}
+.col-md-4{
+	text-align: center;
+}
+/*the zoom*/
+
+/* The Image Box */
+div.img {
+    border: 1px solid #ccc;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+/* The Image */
+div.img img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Description of Image */
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Add Responsiveness */
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+
+@-webkit-keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0.1)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.text-heading {
+	font-family: "Josefin Slab", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+}
+
+h1 {
+	font-size: 4rem;
+}
+
+.tagline-upper {
+	font-size: 5rem;
+	font-weight: 700;
+	line-height: 1;
+}
+
+.tagline-lower {
+	font-size: 1.2rem;
+	line-height: 1;
+}
+
+.text-expanded {
+	letter-spacing: 2px;
+}
+
+.text-shadow {
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.text-lg {
+	font-size: 1.25rem;
+}
+
+.bg-faded {
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+.bg-overlay {
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+hr.divider {
+	border-color: #292b2c;
+	max-width: 250px;
+}
+
+.map-container iframe {
+	pointer-events: none;
+}
+
+.map-container iframe.clicked {
+	pointer-events: auto;
+}

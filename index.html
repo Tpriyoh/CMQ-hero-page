@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Business Casual - Start Bootstrap Theme</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom fonts for this template -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+	<!-- Custom styles for this template -->
+	<link href="css/business-casual.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<div class="logo">
+		<img class="background" src="img/flowrose.png" width="300" height="100%">
+	</div>
+
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-faded py-lg-4">
+		<div class="container">
+			<a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Navigation</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav mx-auto">
+					<li class="nav-item active px-lg-4">
+						<a class="nav-link text-uppercase text-expanded" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+					</li>
+					<li class="nav-item px-lg-4">
+						<a class="nav-link text-uppercase text-expanded" href="index.html">About</a>
+					</li>
+					<li class="nav-item px-lg-4">
+						<a class="nav-link text-uppercase text-expanded" href="index.html">Shop</a>
+					</li>
+					<li class="nav-item px-lg-4">
+						<a class="nav-link text-uppercase text-expanded" href="index.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+	<!-- Image Carousel -->
+
+	<!-- Welcome Message -->
+		<div class="text-heading text-muted text-lg"></div>
+		<div class="text-heading text-muted text-lg">
+			<div class="background2">
+				<p class="blank">Its a bird...Its a plane...NO its SHELL MAN!!!!
+					<p class="text">this is just some filler text that has no meaning what so ever and and is just used as a placeholder for our overlord shell man.</p>
+					<p class="text"> you thought you were gonna get some juicy material about these shells after that first horrid line well think again! its more nonsense.</p>
+				<p class="text">Besides why are you still reading this masterpiece of a strange artical huh? You're here to pay for my world famous $5000 shells because you're not just any ol frycook you're THE frycook!</p>
+
+					<div class="button2">
+						<button class="button1" type="button" class="btn btn-danger">Add To Cart</button>
+					</div>
+			</div>
+		</div>
+
+	<div class="container">
+
+		<div class="bg-faded p-4 my-4">
+			<hr class="divider">
+			<h2 class="text-center text-lg text-uppercase my-0">About Seaq
+				<strong></strong>
+			</h2>
+			<hr class="divider">
+			<img class="img-fluid float-left mr-4 d-none d-lg-block" src="img/IMG_1614.png" width="15%"/>
+			<p>have you ever wanted a shell that looks decked out and is made up of the strongest adamiantum? Then you are looking in the right direction.</p>
+			<p>then stop by to my maxamum noodle making imporium for all your shell city needs.</p>
+			<p>Remember that one spongebob movie where the cyclops used that shell and tricked that bad boy out with googley eyes? that was OUR SHELL. thats right folks our shells are stars and so are you!</p>
+		</div>
+		<!-- this is where the gallery starts -->
+		<div class="bg-faded p-4 my-4">
+			<hr class="divider">
+			<h2 class="text-center text-lg text-uppercase my-2=0">Gallery
+			</h2>
+			<hr class="divider">
+
+<div class="responsive">
+  <div class="img">
+      <img src="img/IMG_1616.jpg" alt="Trolltunga Norway" width="300" height="200">
+ </div>
+</div>
+
+
+<div class="responsive">
+  <div class="img">
+    <img src="img/IMG_1617.jpg" alt="Forest" width="300" height="200">
+  
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+    <img src="img/IMG_1620.jpg" alt="Northern Lights">
+   
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+    <img src="img/IMG_1622.jpg">
+   
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">×</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+		<div class="button3">
+	<button class="button1" type="button" class="btn btn-danger">Add To Cart</button>
+		</div>
+		</div>
+		<script>
+			
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+
+// Get all images and insert the clicked image inside the modal
+// Get the content of the image description and insert it inside the modal image caption
+var images = document.getElementsByTagName('img');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+var i;
+for (i = 0; i < images.length; i++) {
+   images[i].onclick = function(){
+       modal.style.display = "block";
+       modalImg.src = this.src;
+       modalImg.alt = this.alt;
+       captionText.innerHTML = this.nextElementSibling.innerHTML;
+   }
+}
+		</script>
+
+	</div>
+	<!-- /.container -->
+
+	<footer class="bg-faded text-center py-5">
+		<div class="container">
+			<p class="m-0">Copyright &copy; Shell Man Productions. 2025</p>
+		</div>
+	</footer>
+
+	<!-- Bootstrap core JavaScript -->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/popper/popper.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
